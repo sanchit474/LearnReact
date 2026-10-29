@@ -1,0 +1,38 @@
+1. CSS syntax and selectors
+Every CSS rule usually has a selector and a declaration block.
+    .card {
+    background-color: white;
+    padding: 20px;
+      border-radius: 12px;
+    }
+
+- .card  — selector that targets elements with class card.
+- background-color  — property being changed.
+- white  — value assigned to that property.
+- padding: 20px — space inside the element.
+- border-radius: 12px — rounded corners.
+
+Selector reference
+
+Element	p {}	All paragraph elements
+Class	.card {}	Elements with class="card"
+ID	#header {}	The element with id="header"
+Universal	* {}	All elements
+Group	h1, p {}	Both headings and paragraphs
+Descendant	.card p {}	Paragraphs anywhere inside a card
+Child	.card > p {}	Direct child paragraphs
+Multiple classes	.btn.primary {}	Elements with both classes
+Attribute	input[type="email"] {}	Email inputs
+Pseudo-class	.btn:hover {}	Button while hovered
+Pseudo-element	p::first-letter {}	First letter of a paragraph
+
+In React, use className instead of HTML's class attribute.
+    function ProfileCard() {
+        return (
+        <div className="card">
+          <h2>My Profile</h2>
+          <p>Java Backend Developer</p>
+          <button className="btn">View Profile</button>
+        </div>
+      );
+    }

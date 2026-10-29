@@ -1,0 +1,77 @@
+CSS roadmap for React UI development
+
+1. CSS fundamentals
+Essential
+- Selectors, properties and values
+- Inline, internal and external CSS
+- Class selectors and ID selectors
+- CSS imports in React
+- Cascade, specificity and inheritance
+
+
+2. Box model and sizing
+- margin, padding, border
+- width, height, max-width
+- box-sizing: border-box
+- px, %, rem, vh, vw
+- overflow and element sizing
+
+
+3. Flexbox
+- display: flex
+- justify-content, align-items
+- flex-direction, gap, flex-wrap
+- Building navbars, buttons and card layouts
+
+
+4. CSS Grid
+- grid-template-columns
+- repeat() and minmax()
+- gap, grid-column
+- Dashboards, galleries and responsive card grids
+
+
+5. Responsive design
+- Media queries
+- Mobile-first development
+- Responsive typography and images
+- Breakpoints and mobile navigation
+
+
+6. Professional UI styling
+- Colors, fonts and typography
+- Backgrounds, borders and shadows
+- border-radius
+- CSS variables and design systems
+- Buttons, forms, cards and reusable styles
+
+
+7. Advanced CSS
+- position: relative, absolute, fixed, sticky
+- z-index
+- :hover, :focus, ::before, ::after
+- Transitions, transforms and animations
+- Debugging CSS using browser DevTools
+
+
+CSS in a React project
+A typical project might look like this:
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Navbar.css
+│   ├── Button.jsx
+│   └── Button.css
+├── pages/
+│   ├── Home.jsx
+│   └── Home.css
+├── App.jsx
+├── main.jsx
+└── index.css
+
+
+- index.css — global styles, fonts, resets and CSS variables.
+- Navbar.css — navbar-specific styles.
+- Home.css — page layout and page-specific styling.
+- main.jsx — usually imports the global CSS file.
+- App.jsx — combines your React components.

@@ -1,0 +1,35 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+    color: #652323;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body{
+  background-color: #111;
+}
+.parent{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  width: 300px;
+  border: 1px solid #482323;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #787171;
+}
+
+.card img{
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}

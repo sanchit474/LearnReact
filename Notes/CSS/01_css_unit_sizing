@@ -1,0 +1,58 @@
+2. CSS units — sizing everything
+
+Unit	        Meaning	                                                                Best use
+px	            CSS pixels	                                                            Borders, small precise dimensions
+%	            Relative to a containing dimension, depending on property	            Flexible widths
+em	            Relative to the element's font size(or inherited font size for some properties)	Component-relative sizing
+rem	            Relative to the root font size	                                        Consistent spacing and typography
+vw	            1% of viewport width	                                                Viewport-based sizing
+vh	            1% of viewport height	                                                Viewport-height layouts
+dvh	            1% of dynamic viewport height	                                        Mobile full-height sections
+vmin / vmax	    1% of smaller / larger viewport dimension	                            Responsive scaling
+ch	            Width of the 0 glyph in the relevant font	                            Text line width
+fr	            Fraction of available grid space	                                    CSS Grid columns
+auto	        Browser calculates the value according to the property	                Automatic sizing or margins
+
+
+
+
+3. The CSS box model
+Every HTML element is treated as a box. Understanding this is essential because nearly every UI layout uses it.
+Margin — outside space
+Border
+Padding — inside space
+Content
+
+Conceptual illustration of the CSS box model.
+Property	Purpose	                            Example
+width	    Content width by default	        width: 300px;
+height	    Content height by default	        height: 200px;
+min-width	Minimum width	                    min-width: 200px;
+max-width	Maximum width	                    max-width: 1200px;
+min-height	Minimum height	                    min-height: 100vh;
+max-height	Maximum height	                    max-height: 500px;
+margin	    Outside spacing	                    margin: 20px;
+padding	    Inside spacing	                    padding: 16px;
+border	    Border around the element	        border: 1px solid #ddd;
+box-sizing	How width and height are calculated	border-box
+
+
+
+Modern logical alternatives are useful for different writing directions:
+.card {
+  margin-block: 20px;       /* start and end vertically */
+  padding-inline: 16px;     /* left/right in typical English */
+  margin-inline: auto;      /* commonly centers a fixed-width block */
+}
+
+
+Why box-sizing matters
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+With border-box, declared width includes content, padding and border.
+This makes sizing easier to predict and is a common global default.

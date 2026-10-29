@@ -1,0 +1,46 @@
+React is a JavaScript library for building user interfaces from reusable components.
+When application data changes, React can update the relevant parts of the UI.
+It was created at Facebook (now Meta).
+
+Hinglish: React mein hum poori website ek hi file mein nahi banate.
+Hum UI ko chhote reusable components mein divide karte hain, jaise Navbar, LoginForm, TripCard aur Dashboard.
+
+For your GoHomies travel app, a possible component tree would be:
+
+                     App
+                /     |     \
+            Navbar TripList Profile
+    A component tree: parent component → child components
+
+Think of it like backend architecture: a Spring Boot application has controllers,services and repositories;
+a React application has components, hooks and other UI logic.
+They serve different purposes, but both benefit from separation of responsibilities.
+
+----------Why did Facebook create React?--------------
+
+Imagine Facebook was built using traditional JavaScript. Facebook has millions of users and many interactive components.
+Updating the UI as data changes could become difficult to manage.
+
+Facebook engineers needed a better way to build and maintain complex interfaces.
+
+React was developed to help solve these problems.
+1. Efficient UI updates
+When data changes, React updates the relevant parts of the interface instead of requiring you to manually manage every DOM change.
+
+2. Reusable components
+Create a Like button once and reuse it across hundreds of posts.
+
+3. Easier maintenance
+Break a huge application into small, independent components instead of managing one massive block of UI code.
+
+4. Better developer productivity
+Developers can focus on what the interface should display when the data changes,
+while React handles much of the UI updating.
+
+--------------------Library vs Framework----------------------
+
+Feature     	Library (React)     	                    Framework (e.g. Angular)
+Meaning     	A collection of tools/functions you use	    A more complete structure for building applications
+Control     	You decide when and how to use it	        The framework often defines how your application is structured
+Flexibility 	Usually more flexible	                    Usually more conventions and built-in features
+Examples    	React, Lodash	                            Angular, Django
